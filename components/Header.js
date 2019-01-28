@@ -1,40 +1,54 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+ } from 'reactstrap';
 
-const Login = () => {
+export default class Header extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render() {
     return (
-        <span className="clickable">Login </span>
-    )
+      <div>
+        <Navbar color="light" light expand="md" className='navbar-light bg-light justify-md-content-center'>
+          <NavbarBrand href="/"  className = 'd-none d-md-block ' style={{position: 'absolute'}}>D\D</NavbarBrand>
+          <NavbarBrand href="/"  className = 'd-block d-md-none '>D\D</NavbarBrand>
+
+          <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar className='navbar-nav align-right justify-content-center'>
+                <Nav style={{textAlign: "center"}} navbar>
+                    <NavItem>
+                        <NavLink href="/">Home</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink href="/projects">Projects</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink href="/about">About</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink href="/blog">Blog</NavLink>
+                    </NavItem>
+                </Nav>
+            </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 }
-
-const Logout = () => {
-    return (
-        <span className="clickable">Logout</span>
-    )
-}
-
-class Header extends React.Component {
-
-    render() {
-        return (
-            <div>
-                <Link href="/">
-                    <a> Home </a>
-                </Link>
-                <Link href="/project_list">
-                    <a> Project List </a>
-                </Link>
-                <Link href="/about">
-                    <a> About </a>
-                </Link>
-                <Link href="/blog">
-                    <a> Blog </a>
-                </Link>
-                <Login />
-                <Logout />
-            </div>
-        )
-    }
-}
-
-export default Header 

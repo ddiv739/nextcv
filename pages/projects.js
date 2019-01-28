@@ -1,9 +1,9 @@
 import BaseLayout from '../components/layouts/BaseLayout'
 
-const ProjectList = () => (
+const Projects= () => (
     <BaseLayout>
       <p>Projectlist in active production</p>
     </BaseLayout>
   )
   
-  export default ProjectList
+  export default Projects
