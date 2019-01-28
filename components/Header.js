@@ -26,7 +26,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <div className = 'header'>
-        <Navbar color="white"  expand="md" className='navbar-light justify-md-content-center'>
+        <Navbar color="transparent"  expand="md" className='navbar-light justify-md-content-center'>
           <NavbarBrand href="/"  className = 'd-none d-md-block ' style={{position: 'absolute', fontSize: '30px'}}>D\D</NavbarBrand>
           <NavbarBrand href="/"  className = 'd-block d-md-none '>D\D</NavbarBrand>
 
