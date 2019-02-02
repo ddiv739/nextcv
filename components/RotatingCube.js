@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import * as THREE from 'three'
 
-const VisWithHooks = () => {
+const RotatingCube = () => {
   const mount = useRef(null)
   const [isAnimating, setAnimating] = useState(true)
   const controls = useRef(null)
@@ -15,11 +15,20 @@ const VisWithHooks = () => {
     const camera = new THREE.PerspectiveCamera(25, width / height, 0.1, 1000)
     const renderer = new THREE.WebGLRenderer({ antialias: true })
     const geometry = new THREE.BoxGeometry(1, 1, 1)
-    const material = new THREE.MeshBasicMaterial({ color: 0xff00ff })
-    const cube = new THREE.Mesh(geometry, material)
+    var geo = new THREE.EdgesGeometry( geometry ); // or WireframeGeometry( geometry )
 
-    camera.position.z = 4
+    var mat = new THREE.LineBasicMaterial( { color: 0x000000, linewidth: 3 } );
+
+    var wireframe = new THREE.LineSegments( geo, mat );
+    const cube = wireframe
     scene.add(cube)
+
+    const circgeo = new THREE.SphereGeometry(0.1,8,8)
+    const circmat = new THREE.MeshBasicMaterial({ color: 0xb73a49})
+    const sphere = new THREE.Mesh(circgeo, circmat)
+
+    scene.add(sphere)
+    camera.position.z = 4
     renderer.setClearColor('#FFFFFF')
     renderer.setSize(width, height)
 
@@ -39,7 +48,10 @@ const VisWithHooks = () => {
     const animate = () => {
       cube.rotation.x += 0.01
       cube.rotation.y += 0.01
-
+      // if(camera.position.z <= 6.0) {
+      //   camera.position.z += 0.01
+      //   sphere.position.y += 0.005
+      // }
       renderScene()
       frameId = window.requestAnimationFrame(animate)
     }
@@ -68,8 +80,11 @@ const VisWithHooks = () => {
       mount.current.removeChild(renderer.domElement)
 
       scene.remove(cube)
-      geometry.dispose()
-      material.dispose()
+      geo.dispose()
+      mat.dispose()
+      scene.remove(sphere)
+      circgeo.dispose()
+      circmat.dispose()
     }
   }, [])
 
@@ -92,10 +107,11 @@ const VisWithHooks = () => {
     <div
       className="vis"
       ref={mount}
-      onClick={() => setAnimating(!isAnimating)}
+      // onClick={() => setAnimating(!isAnimating)}
+      // onMouseEnter={() => setAnimating(!isAnimating)}
       style={{width:"200px", height:"200px", margin: 'auto'}}
     />
   )
 }
 
-export default VisWithHooks
+export default RotatingCube

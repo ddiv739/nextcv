@@ -27,8 +27,8 @@ export default class Header extends React.Component {
     return (
       <div className = 'header'>
         <Navbar color="transparent"  expand="md" className='navbar-light justify-md-content-center'>
-          <NavbarBrand href="/"  className = 'd-none d-md-block ' style={{position: 'absolute', fontSize: '30px'}}>D\D</NavbarBrand>
-          <NavbarBrand href="/"  className = 'd-block d-md-none '>D\D</NavbarBrand>
+          <NavbarBrand href="/"  className = 'd-none d-md-block ' style={{position: 'absolute', fontSize: '30px'}}>D<span style={{color: 'rgb(183, 58, 73)'}}>\</span>D</NavbarBrand>
+          <NavbarBrand href="/"  className = 'd-block d-md-none '>D<span style={{color: 'rgb(183, 58, 73)'}}>\</span>D</NavbarBrand>
 
           <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar className='navbar-nav align-right justify-content-center'>
