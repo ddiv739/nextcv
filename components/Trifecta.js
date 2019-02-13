@@ -8,12 +8,12 @@ const Trifecta = () => (
                 <Card className="trifecta d-block d-md-none" style={{width: '100%', margin: 'auto'}}>
                     <CardHeader className="d-none d-md-block">
                         <h3>
-                            The Professional's Trifecta
+                            Professional's Trifecta
                         </h3>
                     </CardHeader>
                     <CardHeader className="d-block d-md-none">
                         <h5>
-                            The Professional's Trifecta
+                            Professional's Trifecta
                         </h5>
                     </CardHeader>
                     <CardBody>
@@ -38,12 +38,12 @@ const Trifecta = () => (
                 <Card className="trifecta d-none d-md-block" style={{width: '50%', margin: 'auto'}}>
                 <CardHeader className="d-none d-md-block">
                     <h3>
-                        The Professional's Trifecta
+                        Professional's Trifecta
                     </h3>
                 </CardHeader>
                 <CardHeader className="d-block d-md-none">
                     <h5>
-                        The Professional's Trifecta
+                        Professional's Trifecta
                     </h5>
                 </CardHeader>
                 <CardBody>

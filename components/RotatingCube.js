@@ -5,7 +5,6 @@ const RotatingCube = () => {
   const mount = useRef(null)
   const [isAnimating, setAnimating] = useState(true)
   const controls = useRef(null)
-
   useEffect(() => {
     let width = mount.current.clientWidth
     let height = mount.current.clientHeight
@@ -21,7 +20,13 @@ const RotatingCube = () => {
 
     var wireframe = new THREE.LineSegments( geo, mat );
     const cube = wireframe
-    scene.add(cube)
+
+    var group = new THREE.Group();
+
+    group.add(cube)
+    group.add(new THREE.Mesh(new THREE.SphereGeometry(0.1,8,8), new THREE.MeshBasicMaterial({ color: 0x000000})))
+    scene.add(group)
+    // scene.add(cube)
 
     const circgeo = new THREE.SphereGeometry(0.1,8,8)
     const circmat = new THREE.MeshBasicMaterial({ color: 0xb73a49})
@@ -46,12 +51,12 @@ const RotatingCube = () => {
     }
 
     const animate = () => {
-      cube.rotation.x += 0.01
-      cube.rotation.y += 0.01
-      // if(camera.position.z <= 6.0) {
-      //   camera.position.z += 0.01
-      //   sphere.position.y += 0.005
-      // }
+      group.rotation.x += 0.01
+      group.rotation.y += 0.01
+      if(camera.position.z <= 6.0) {
+        camera.position.z += 0.01
+        sphere.position.y += 0.005
+      }
       renderScene()
       frameId = window.requestAnimationFrame(animate)
     }
@@ -105,11 +110,11 @@ const RotatingCube = () => {
   */
   return (
     <div
-      className="vis"
+      className="rotatingcube"
       ref={mount}
       // onClick={() => setAnimating(!isAnimating)}
       // onMouseEnter={() => setAnimating(!isAnimating)}
-      style={{width:"200px", height:"200px", margin: 'auto'}}
+      style={{width:"300px", height:"300px", margin: 'auto'}}
     />
   )
 }

@@ -6,7 +6,6 @@ import BaseLayout from '../components/layouts/BaseLayout'
 import Trifecta from '../components/Trifecta'
 import { FiCode} from 'react-icons/fi'
 import RotatingCube from '../components/RotatingCube';
-
 const Index = () => (
     <BaseLayout className='base-layout'>
       <Container className='base-layout index-container'>

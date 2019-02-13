@@ -3,5 +3,5 @@
 /.next
 /coverage
 .env
-/.out
-.out
+/out
+out
