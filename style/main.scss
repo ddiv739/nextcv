@@ -7,7 +7,13 @@ $color-secondary-grey: rgba(0, 0, 0,0.5);
     width: 80% !important;
     max-width: 80% !important;
 }
-
+.about-layout {
+  width: 40% !important;
+  max-width: 40% !important;
+  min-width: 300px !important;
+  margin: auto;
+  text-align: center
+}
  h1,h2,h3,h4,h5 {
     font-family: 'Sarala', sans-serif;
  }
@@ -33,6 +39,20 @@ $color-secondary-grey: rgba(0, 0, 0,0.5);
     padding-bottom:  5px;
 }
 
+.about-h1 {
+  color: rgb(183, 58, 73);
+  font-size: 90px;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 300px !important;
+  margin: auto;
+  text-align: center;
+
+}
+.about-subtitle {
+  color: rgb(183, 58, 73);
+  font-size: 32px;
+}
 //Button fade ins
 .hovfadein {
   padding-top: 5px;
@@ -70,6 +90,7 @@ $color-secondary-grey: rgba(0, 0, 0,0.5);
     animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
   }
   
+
   @keyframes blinking-cursor {
     0% {
       opacity: 0;
