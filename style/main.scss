@@ -14,8 +14,8 @@ $color-secondary-grey: rgba(0, 0, 0,0.5);
   margin: auto;
   text-align: center
 }
- h1,h2,h3,h4,h5 {
-    font-family: 'Sarala', sans-serif;
+ h1,h2,h3,h4,h5,p,* {
+    font-family: 'Montserrat', sans-serif;
  }
 .index-container > * {
     text-align: center;
@@ -39,14 +39,15 @@ $color-secondary-grey: rgba(0, 0, 0,0.5);
     padding-bottom:  5px;
 }
 
-.about-h1 {
+.about-head {
   color: rgb(183, 58, 73);
-  font-size: 90px;
+  font-size: 70px;
   width: 100% !important;
   max-width: 100% !important;
   min-width: 300px !important;
   margin: auto;
   text-align: center;
+  padding-bottom: 20px;
 
 }
 .about-subtitle {
