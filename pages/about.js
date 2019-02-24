@@ -4,12 +4,13 @@ import {MdLocationOn, MdAccountBalance, MdSettings,MdFace} from 'react-icons/md'
 const About = () => (
     <BaseLayout className='about-layout'>
       <Container className='about-layout index-container'>
-          <div>
+      <div>
             <MdFace style={{  height: '50px', width: '50px',color: 'rgb(183, 58, 73)'}}/>
           </div>
           <h1 className="d-none d-xl-block about-head">Dhruv Divekar</h1>
           <h1 className="d-block d-xl-none about-head">Dhruv</h1>
           <h1 className="d-block d-xl-none about-head">Divekar</h1>
+
               <Row>
                 <Col>
                 <MdAccountBalance /><h5>BCom/BE(Hons) <br /> First Class </h5>
