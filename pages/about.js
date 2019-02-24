@@ -16,7 +16,7 @@ const About = () => (
                 <MdAccountBalance /><h5>BCom/BE(Hons) <br /> First Class </h5>
                 </Col>
                 <Col>
-                <MdSettings /><h5>Computer Systems & Finance</h5>
+                <MdSettings /><h5>Computer Systems <br /> & Finance</h5>
                 </Col>
               </Row>
               <h5><MdLocationOn /><br /><i>Melbourne, VIC</i>   </h5>
