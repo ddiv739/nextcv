@@ -1,6 +1,6 @@
 import BaseLayout from '../components/layouts/BaseLayout'
 import {MdBuild} from 'react-icons/md'
-import {Container} from 'reactstrap'
+import {Container, Card, Row, Col, CardTitle,CardDeck, CardImg,CardBody,CardText, Button} from 'reactstrap'
 const Projects= () => (
     <BaseLayout>
           <Container className='about-layout index-container'>
@@ -11,7 +11,32 @@ const Projects= () => (
           <h1 className="d-none d-xl-block about-head">Dhruv Divekar</h1>
           <h1 className="d-block d-xl-none about-head">Dhruv</h1>
           <h1 className="d-block d-xl-none about-head">Divekar</h1>
-      <p>Projectlist in active production</p>
+      <p>A Collection of Projects I consider interesting or a worthwhile learning experience</p>
+      <hr />
+      <CardDeck >
+      <Card>
+        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+        <CardBody>
+          <CardTitle>Card title</CardTitle>
+          <hr />
+          <CardText className="d-none d-xl-block">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+          <Button style={{marginTop:'10px'}}>Button</Button>
+        </CardBody>
+      </Card>
+      <Card>
+        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+        <CardBody>
+          <CardTitle>Card title</CardTitle>
+          <hr />
+          <CardText className="d-none d-xl-block">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+          <Button style={{marginTop:'10px'}}>Button</Button>
+        </CardBody>
+      </Card>
+      </CardDeck>
+
+      <hr />
+      <p>I'll be actively adding this list as I clean and migrate projects so stay tuned for updates!</p>
+
        </Container>
     </BaseLayout>
   )

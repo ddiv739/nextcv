@@ -72,6 +72,14 @@ $color-secondary-grey: rgba(0, 0, 0,0.5);
     cursor: pointer;
   }
 
+
+  .project-card {
+  }
+  .project-card:hover {
+    background-color: rgba(183, 58, 73,0.45);
+    cursor: pointer;
+ 
+  }
   .glyphicon {
     height: 40px;
     width: 40px;
