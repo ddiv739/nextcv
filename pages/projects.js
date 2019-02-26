@@ -2,8 +2,8 @@ import BaseLayout from '../components/layouts/BaseLayout'
 import {MdFreeBreakfast} from 'react-icons/md'
 import {Container, Card, Row, Col, CardTitle,CardDeck, CardImg,CardBody,CardText, Button} from 'reactstrap'
 
-import humanoid_thumb from 'static/images/humanoid_thumb.jpg'
-import tensor_thumb from 'static/images/tensor_thumb.jpg'
+import humanoid_thumb from '../static/images/humanoid_thumb.jpg'
+import tensor_thumb from '../static/images/tensor_thumb.jpg'
 
 const Projects= () => (
     <BaseLayout>
