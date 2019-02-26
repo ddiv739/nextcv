@@ -2,6 +2,8 @@ import BaseLayout from '../components/layouts/BaseLayout'
 import {MdFreeBreakfast} from 'react-icons/md'
 import {Container, Card, Row, Col, CardTitle,CardDeck, CardImg,CardBody,CardText, Button} from 'reactstrap'
 
+import humanoid_thumb from 'static/images/humanoid_thumb.jpg'
+import tensor_thumb from 'static/images/tensor_thumb.jpg'
 
 const Projects= () => (
     <BaseLayout>
@@ -16,7 +18,7 @@ const Projects= () => (
       <hr />
       <CardDeck >
       <Card>
-        <CardImg top width="100%" src='static/images/humanoid_thumb.jpg' alt="Humanoid next to stage." />
+        <CardImg top width="100%" src={humanoid_thumb} alt="Humanoid next to stage." />
         <CardBody>
           <CardTitle>Humanoid Concierge and Greeter</CardTitle>
           <hr />
@@ -25,7 +27,7 @@ const Projects= () => (
         </CardBody>
       </Card>
       <Card>
-        <CardImg top width="100%" src='static/images/tensor_thumb.jpg' alt="Tensorflow placeholder image" />
+        <CardImg top width="100%" src={tensor_thumb} alt="Tensorflow placeholder image" />
         <CardBody>
           <CardTitle>Tensorflow Object Detection Guide</CardTitle>
           <hr />
