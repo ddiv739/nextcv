@@ -10,25 +10,25 @@ const Projects= () => (
           </div>
           <h1 className="about-head">Projects</h1>
 
-      <p>A collection of projects I consider interesting or a worthwhile learning experience</p>
+      <h5>A collection of projects I consider interesting or a worthwhile learning experience</h5>
       <hr />
       <CardDeck >
       <Card>
-        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+        <CardImg top width="100%" src="static/images/humanoid_thumb.jpg" alt="Humanoid next to stage." />
         <CardBody>
-          <CardTitle>Card title</CardTitle>
+          <CardTitle>Humanoid Concierge and Greeter</CardTitle>
           <hr />
-          <CardText className="d-none d-xl-block">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-          <Button style={{marginTop:'10px'}}>Button</Button>
+          <CardText className="d-none d-xl-block">Discussion of a Humanoid  implemented by Telstra Labs to augment the customer experience through a novel robot that can engage in conversation and guide guests to meeting rooms </CardText>
+          <Button style={{marginTop:'10px'}}>Coming soon</Button>
         </CardBody>
       </Card>
       <Card>
-        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+        <CardImg top width="100%" src="static/images/tensor_thumb.jpg" alt="Tensorflow placeholder image" />
         <CardBody>
-          <CardTitle>Card title</CardTitle>
+          <CardTitle>Tensorflow Object Detection Guide</CardTitle>
           <hr />
-          <CardText className="d-none d-xl-block">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-          <Button style={{marginTop:'10px'}}>Button</Button>
+          <CardText className="d-none d-xl-block">A practical guide to transfer learning with tensorflow-GPU object detection on Ubuntu. Omits any theory to instead provide a end-to-end practical guide to get your training with an hour  </CardText>
+          <Button style={{marginTop:'10px'}}>Coming soon</Button>
         </CardBody>
       </Card>
       </CardDeck>
