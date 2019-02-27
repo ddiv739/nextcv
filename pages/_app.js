@@ -22,7 +22,7 @@ export default class MyApp extends App {
     return (
       <Container>
         <Head>
-            <title>New Portfolio</title>
+            <title>Dhruv Divekar</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link href="https://fonts.googleapis.com/css?family=Sarala|Thasadith|Montserrat" rel="stylesheet" />
         </Head>
