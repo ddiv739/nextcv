@@ -24,6 +24,16 @@ export default class MyApp extends App {
         <Head>
             <title>Dhruv Divekar</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93899064-3"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments)}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-93899064-3');
+            </script>
+
             <link href="https://fonts.googleapis.com/css?family=Sarala|Thasadith|Montserrat" rel="stylesheet" />
         </Head>
         <Component {...pageProps} />
