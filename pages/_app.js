@@ -1,9 +1,16 @@
 import React from 'react'
 import App, { Container } from 'next/app'
 import Head from 'next/head'
+import ReactGA from 'react-ga'
 
 import '../resources/bootstrap/dist/css/bootstrap.min.css'
 import '../style/main.scss'
+
+
+function initializeReactGA() {
+  ReactGA.initialize('UA-93899064-3');
+  ReactGA.pageview('/');
+}
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
@@ -17,6 +24,7 @@ export default class MyApp extends App {
   }
 
   render () {
+    initializeReactGA()
     const { Component, pageProps } = this.props
 
     return (
@@ -24,16 +32,6 @@ export default class MyApp extends App {
         <Head>
             <title>Dhruv Divekar</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93899064-3"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments)}
-              gtag('js', new Date());
-
-              gtag('config', 'UA-93899064-3');
-            </script>
-
             <link href="https://fonts.googleapis.com/css?family=Sarala|Thasadith|Montserrat" rel="stylesheet" />
         </Head>
         <Component {...pageProps} />
