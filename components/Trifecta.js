@@ -23,7 +23,7 @@ const Trifecta = () => (
                                 <div className="row justify-content-center align-items-center">Linkedin</div>
                             </div>
                             <div className="col-sm glyphicon" ><FiCode /></div>
-                            <div className="col-sm hovfadein " onClick={()=>{window.open("https://1drv.ms/b/s!AsTPUiKo9CTXgq4ewxyYL2qxRoJ3AQ?e=K6izYt")}}>
+                            <div className="col-sm hovfadein " onClick={()=>{window.open("https://1drv.ms/b/s!AsTPUiKo9CTXgrpB6ZXTMG3NeVfMXQ?e=RghI1G")}}>
                                 <div className="row justify-content-center align-items-center"><GoRepo className="glyphicon"/></div>
                                 <div className="row justify-content-center align-items-center">Résumé</div>
                             </div>
