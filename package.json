@@ -24,6 +24,6 @@
     "react-icons": "^3.3.0",
     "react-rotating-text": "^1.2.1",
     "reactstrap": "^7.1.0",
-    "three": "^0.101.1"
+    "three": "^0.125.0"
   }
 }
