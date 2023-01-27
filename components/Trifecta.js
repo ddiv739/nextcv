@@ -8,7 +8,7 @@ const Trifecta = () => (
                 <Card className="trifecta d-block d-md-none" style={{width: '100%', margin: 'auto'}}>
                     <CardHeader className="d-none d-md-block">
                         <h3>
-                            Professional's Trifecta
+                            The Important Bits
                         </h3>
                     </CardHeader>
                     <CardHeader className="d-block d-md-none">
