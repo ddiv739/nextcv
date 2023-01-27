@@ -26,7 +26,6 @@ const About = () => (
             creativity. My key interests include : AI, Innovation and Analytics as well as stock trading and data visualisation 
             on the Finance side.
           </p>
-          </ul>
           <br />
           <p>For a full list of respective languages/frameworks used please refer to my <a  href="https://linkedin.com/in/dhruv-divekar" target="_blank"><u>Linkedin!</u></a></p>
           <hr />
