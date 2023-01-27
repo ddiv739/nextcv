@@ -13,10 +13,10 @@ const Index = () => (
           <h1 className="d-none d-md-block">Dhruv<span style={{color: 'rgb(183, 58, 73)'}}>\</span>Divekar</h1>
           <h1 className="d-block d-md-none">Dhruv<span style={{color: 'rgb(183, 58, 73)'}}>\</span></h1>
           <h1 className="d-block d-md-none">Divekar</h1>
-          <h1 style={{fontSize: "45px", paddingBottom: '20px'}}><ReactRotatingText items={["Engineering", "Commerce","Innovation"]} /></h1>
+          <h1 style={{fontSize: "45px", paddingBottom: '20px'}}><ReactRotatingText items={["Engineering", "Finance","Innovation"]} /></h1>
           <div className="d-none d-md-block">
             <div className="d-flex justify-content-between " style={{ minWidth: "30%", maxWidth: "30%", margin: 'auto'}}>
-              <Button outline color="dark" className='text-nowrap button' id='emailink' href="mailto:ddiv739.aucklanduni.ac.nz"><FiMail /> Email</Button>
+              <Button outline color="dark" className='text-nowrap button' id='emailink' href="mailto:dhruv.divekar@gmail.com"><FiMail /> Email</Button>
               <UncontrolledTooltip placement="left" target="emailink">
                 ddiv739@aucklanduni.ac.nz
               </UncontrolledTooltip>
