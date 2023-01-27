@@ -25,7 +25,7 @@ const Trifecta = () => (
                             <div className="col-sm glyphicon" ><FiCode /></div>
                             <div className="col-sm hovfadein " onClick={()=>{window.open("https://1drv.ms/b/s!AsTPUiKo9CTXg6d3mGsmhU4QQSRI0w?e=vQcrVQ")}}>
                                 <div className="row justify-content-center align-items-center"><GoRepo className="glyphicon"/></div>
-                                <div className="row justify-content-center align-items-center">Résumé</div>
+                                <div className="row justify-content-center align-items-center">Resumé</div>
                             </div>
                             <div className="col-sm glyphicon" ><FiCode /></div>
                             <div className="col-sm hovfadein " onClick={()=>{window.open("https://www.myequals.net/#/sharelink/76f312f8-923a-458d-948f-3d99e720ec23/f4ced532-9323-4ed2-be68-dad8180a9b6d")}}>
