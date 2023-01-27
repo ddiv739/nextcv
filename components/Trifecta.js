@@ -13,7 +13,7 @@ const Trifecta = () => (
                     </CardHeader>
                     <CardHeader className="d-block d-md-none">
                         <h5>
-                            Professional's Trifecta
+                            The Important Bits
                         </h5>
                     </CardHeader>
                     <CardBody>
