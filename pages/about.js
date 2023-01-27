@@ -19,23 +19,13 @@ const About = () => (
                 <MdSettings /><h5>Computer Systems <br /> & Finance</h5>
                 </Col>
               </Row>
-              <h5><MdLocationOn /><br /><i>Melbourne, VIC</i>   </h5>
+              <h5><MdLocationOn /><br /><i>Gold Coast, QLD</i>   </h5>
               <hr />
           <p className="about-subtitle">Hi there! <br /> Thanks for coming by.</p>
-          <p>My name is Dhruv - an Engineer and Finance graduate with a passion for innovation and flair for 
-            creativity. My key interests include : AI, Computer Vision and novel App development as well as stock trading and data visualisation 
+          <p>My name is Dhruv - an Engineer and Finance graduate and an experience Datascientist with a passion for innovation and flair for 
+            creativity. My key interests include : AI, Innovation and Analytics as well as stock trading and data visualisation 
             on the Finance side.
           </p>
-          <hr />
-          <p className="about-subtitle">Current Role</p>
-          <p><i>Telstra Labs <br /> (Formerly Chief Technology Office) </i><br />
-          AI, Humanoids and Computer Vision Graduate</p>
-          <hr />
-          <p className="about-subtitle">Technologies Currently Used</p>
-          <ul>
-            <li>Python (flask, opencv, tensorflow-gpu)</li>
-            <li>Javascript</li>
-            <li>Tensorflow</li>
           </ul>
           <br />
           <p>For a full list of respective languages/frameworks used please refer to my <a  href="https://linkedin.com/in/dhruv-divekar" target="_blank"><u>Linkedin!</u></a></p>
