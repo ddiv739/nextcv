@@ -18,13 +18,13 @@ const Index = () => (
             <div className="d-flex justify-content-between " style={{ minWidth: "30%", maxWidth: "30%", margin: 'auto'}}>
               <Button outline color="dark" className='text-nowrap button' id='emailink' href="mailto:dhruv.divekar@gmail.com"><FiMail /> Email</Button>
               <UncontrolledTooltip placement="left" target="emailink">
-                ddiv739@aucklanduni.ac.nz
+                dhruv.divekar@gmail.com
               </UncontrolledTooltip>
               <FiCode style={{height:'33px', width: '31px'}}/>
 
               <Button outline color="dark" className='text-nowrap button ' id='githublink' onClick={()=>{window.open("https://github.com/ddiv739")}}><FiGithub /> Github</Button>
               <UncontrolledTooltip placement="right" target="githublink">
-                Most repos private, feel free to contact me to talk about what I can do for you or visit projects tab!
+                Most repos private, feel free to contact me to talk about what I can do for you!
               </UncontrolledTooltip>
             </div>
           </div>
