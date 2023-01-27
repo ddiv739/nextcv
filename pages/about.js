@@ -22,8 +22,8 @@ const About = () => (
               <h5><MdLocationOn /><br /><i>Gold Coast, QLD</i>   </h5>
               <hr />
           <p className="about-subtitle">Hi there! <br /> Thanks for coming by.</p>
-          <p>My name is Dhruv - an Engineer and Finance graduate and an experience Datascientist with a passion for innovation and flair for 
-            creativity. My key interests include : AI, Innovation and Analytics as well as stock trading and data visualisation 
+          <p>My name is Dhruv - an Engineer and Finance Graduate and an experienced Datascientist with a passion for innovation and flair for 
+            creativity. Currently working in the fraud prevention space. My expertise includes : AI, Innovation and Analytics as well as stock trading and data visualisation 
             on the Finance side.
           </p>
           <br />
