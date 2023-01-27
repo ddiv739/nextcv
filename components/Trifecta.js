@@ -38,12 +38,12 @@ const Trifecta = () => (
                 <Card className="trifecta d-none d-md-block" style={{width: '50%', margin: 'auto'}}>
                 <CardHeader className="d-none d-md-block">
                     <h3>
-                        Professional's Trifecta
+                        The Important Bits
                     </h3>
                 </CardHeader>
                 <CardHeader className="d-block d-md-none">
                     <h5>
-                        Professional's Trifecta
+                        The Important Bits
                     </h5>
                 </CardHeader>
                 <CardBody>
@@ -53,7 +53,7 @@ const Trifecta = () => (
                             <div className="row justify-content-center align-items-center">Linkedin</div>
                         </div>
                         <div className="col-sm glyphicon" ><FiCode /></div>
-                        <div className="col-sm hovfadein " onClick={()=>{window.open("https://1drv.ms/b/s!AsTPUiKo9CTXgrpGg9FK2Ibl9Rq5YA?e=JFWHgV")}}>
+                        <div className="col-sm hovfadein " onClick={()=>{window.open("https://1drv.ms/b/s!AsTPUiKo9CTXg6d3mGsmhU4QQSRI0w?e=vQcrVQ")}}>
                             <div className="row justify-content-center align-items-center"><GoRepo className="glyphicon"/></div>
                             <div className="row justify-content-center align-items-center">Résumé</div>
                         </div>
