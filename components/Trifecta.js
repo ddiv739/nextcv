@@ -23,7 +23,7 @@ const Trifecta = () => (
                                 <div className="row justify-content-center align-items-center">Linkedin</div>
                             </div>
                             <div className="col-sm glyphicon" ><FiCode /></div>
-                            <div className="col-sm hovfadein " onClick={()=>{window.open("https://1drv.ms/b/s!AsTPUiKo9CTXg6hPe5vJ6WsIUtLs1A?e=p8EcjU")}}>
+                            <div className="col-sm hovfadein " onClick={()=>{window.open("https://1drv.ms/b/s!AsTPUiKo9CTXg6k6NdaWY4Cgrcn00Q?e=aoyKeN")}}>
                                 <div className="row justify-content-center align-items-center"><GoRepo className="glyphicon"/></div>
                                 <div className="row justify-content-center align-items-center">Resumé</div>
                             </div>
@@ -53,7 +53,7 @@ const Trifecta = () => (
                             <div className="row justify-content-center align-items-center">Linkedin</div>
                         </div>
                         <div className="col-sm glyphicon" ><FiCode /></div>
-                        <div className="col-sm hovfadein " onClick={()=>{window.open("https://1drv.ms/b/s!AsTPUiKo9CTXg6hPe5vJ6WsIUtLs1A?e=p8EcjU")}}>
+                        <div className="col-sm hovfadein " onClick={()=>{window.open("https://1drv.ms/b/s!AsTPUiKo9CTXg6k6NdaWY4Cgrcn00Q?e=aoyKeN")}}>
                             <div className="row justify-content-center align-items-center"><GoRepo className="glyphicon"/></div>
                             <div className="row justify-content-center align-items-center">Résumé</div>
                         </div>
